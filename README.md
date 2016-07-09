@@ -17,6 +17,7 @@ That code is:
 
 run.example <- function() {
   load("ex.priors.rda")
+  
   # solve for MRF parameters
   res <- solveMRF(ex.priors)
   
