@@ -17,17 +17,17 @@ That code is:
 
 run.example <- function() {
 
-  load("ex.priors.rda")
+    load("ex.priors.rda")
   
-  # solve for MRF parameters
-  res <- solveMRF(ex.priors)
+    # solve for MRF parameters
+    res <- solveMRF(ex.priors)
   
-  # get posterior probabilities of class membership
-  ex.post <- posterior(res$a, res$b, ex.priors)
+    # get posterior probabilities of class membership
+    ex.post <- posterior(res$a, res$b, ex.priors)
   
-  # get the posterior best classifications
-  postb <- best.mod.list(ex.post)
+    # get the posterior best classifications
+    postb <- best.mod.list(ex.post)
   
-  return(list(res = res, pp = ex.priors, postp = ex.post, postb = postb))
+    return(list(res = res, pp = ex.priors, postp = ex.post, postb = postb))
   
 }
