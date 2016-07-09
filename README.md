@@ -15,7 +15,7 @@ A toy example of priors can be found in ex.priors.rda. The code includes a worki
 
 That code is:
 
-run.example <- function() {
+    run.example <- function() {
 
     load("ex.priors.rda")
   
@@ -30,4 +30,4 @@ run.example <- function() {
   
     return(list(res = res, pp = ex.priors, postp = ex.post, postb = postb))
   
-}
+    }
