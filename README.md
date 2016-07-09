@@ -16,6 +16,7 @@ A toy example of priors can be found in ex.priors.rda. The code includes a worki
 That code is:
 
 run.example <- function() {
+
   load("ex.priors.rda")
   
   # solve for MRF parameters
@@ -28,4 +29,5 @@ run.example <- function() {
   postb <- best.mod.list(ex.post)
   
   return(list(res = res, pp = ex.priors, postp = ex.post, postb = postb))
+  
 }
